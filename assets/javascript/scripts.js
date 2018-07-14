@@ -1,9 +1,11 @@
+// You will need to fill in apiKey for this to work
+var apiKey = "";
 var gifs = ["lady gaga", "gwen stefani", "kristen bell", "taylor swift"];
 
 function gifDisplay() {
   var gif = $(this).attr("data-name");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    gif + "&api_key=dc6zaTOxFJmzC&limit=10";
+    gif + "&api_key=" + apiKey + "&limit=10";
 
   console.log(queryURL);
 
